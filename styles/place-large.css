@@ -1,0 +1,38 @@
+@media (min-width: 768px) {
+    main {
+        position: relative;
+    }
+
+    .hero {
+        position: relative;
+    }
+
+    .data,
+    .weather {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.797);
+        padding: 1rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        width: 250px;
+    }
+
+    .data {
+        top: 2rem;
+        left: 2rem;
+    }
+
+    .weather {
+        bottom: 2rem;
+        right: 2rem;
+    }
+
+    .weather-icon-mobile {
+        display: none;
+    }
+
+    .weather-icon-desktop::after {
+        content: " ⛅";
+        font-size: 2rem;
+        margin-left: 0.3rem;
+    }
+}

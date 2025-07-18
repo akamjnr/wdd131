@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - My City Cape Town | Anyway Kambeva</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | The city where I live - Cape Town">
+    <meta name="author" content="Anyway Kambeva">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Cape Town</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 768px)">
+                <img src="images/hero-small.webp" alt="View of Cape Town">
+            </picture>
+        </section>
+
+        <section class="data">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 2,461 sq km</li>
+                <li><strong>Population:</strong> 4,618,000</li>
+                <li><strong>Capital:</strong> Cape Town</li>
+                <li><strong>Languages:</strong> English, Afrikaans, isiXhosa, Zulu</li>
+                <li><strong>Currency:</strong> South African Rand (ZAR)</li>
+                <li><strong>Time Zone:</strong> UTC+2</li>
+                <li><strong>Calling Code:</strong> +27</li>
+                <li><strong>Internet TLD:</strong> .za</li>
+            </ul>
+        </section>
+
+        <section class="weather">
+            <h2>Weather <span class="weather-icon-desktop" aria-hidden="true"></span></h2>
+            <img class="weather-icon-mobile" src="images/weather-icon.svg" alt="Partly Cloudy">
+            <ul>
+                <li><strong>Temperature:</strong> <span id="temp">10</span> °C</li>
+                <li><strong>Conditions:</strong> Partly Cloudy</li>
+                <li><strong>Wind:</strong> <span id="wind">5</span> km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="chill">Calculating...</span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Anyway Kambeva | Cape Town, South Africa.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
