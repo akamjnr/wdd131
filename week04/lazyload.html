@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Lazyloading Images | Anyway Kambeva</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Lazyloading Images">
+    <meta name="author" content="Anyway Kambeva">
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+
+<body>
+
+    <main>
+        <h1>Lazyloading Images</h1>
+
+        <div class="image-container">
+            <img src="images/placeholder.jpg" loading="lazy" data-src="images/grass-flowers.jpg"
+                alt="beautiful flowers">
+        </div>
+
+        <div class="image-container">
+            <img src="images/placeholder.jpg" loading="lazy" data-src="images/barley-field.jpg" alt="barley field">
+        </div>
+
+        <div class="image-container">
+            <img src="images/placeholder.jpg" loading="lazy" data-src="images/beautiful-flowers.jpg"
+                alt="beautiful flowers">
+        </div>
+
+        <div class="image-container">
+            <img src="images/placeholder.jpg" loading="lazy" data-src="images/flower.jpg" alt="red flower">
+        </div>
+
+        <div class="image-container">
+            <img src="images/placeholder.jpg" loading="lazy" data-src="images/poppies.jpg" alt="beautiful poppies">
+        </div>
+
+        <div class="image-container">
+            <img src="images/placeholder.jpg" loading="lazy" data-src="images/tulips.jpg" alt="beautiful tulips">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Anyway Kambeva | Cape Town, South Africa.</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>

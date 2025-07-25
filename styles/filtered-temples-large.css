@@ -1,0 +1,61 @@
+@media screen and (min-width: 600px) {
+    header {
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-top {
+        flex: 1;
+        display: flex;
+        align-items: center;
+    }
+
+    #course-title {
+        font-size: 2.4rem;
+        margin: 0;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    nav {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    nav ul.navigation {
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.5rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .temples-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    figure {
+        padding: 0.7rem;
+        margin: 0;
+    }
+
+    figure img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    figcaption {
+        margin: 0.5rem;
+    }
+}

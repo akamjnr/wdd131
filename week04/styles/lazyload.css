@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #505357;
+    line-height: 1.5;
+    font-size: 15px;
+    background-color: rgb(238, 238, 238);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #021e3a;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+.image-container {
+    padding: 1rem;
+    margin: 1rem auto;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    opacity: 1;
+    transition: filter 0.50s;
+    filter: none;
+}
+
+.image-container img[data-src] {
+    filter: blur(0.2em);
+}
+
+/* Fade */
+@keyframes fadeBlurFromBlack {
+    0% {
+        opacity: 0;
+        filter: brightness(0) blur(5px);
+    }
+
+    100% {
+        opacity: 1;
+        filter: brightness(1) blur(0);
+    }
+}
+
+img.fade-in {
+    animation: fadeBlurFromBlack 1s ease-out forwards;
+    opacity: 0;
+}
+
+footer {
+    background-color: #021e3a;
+    color: #6d7e97;
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 1.5rem;
+}
