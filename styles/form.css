@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+header,
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    line-height: 1rem;
+    padding: .5rem;
+}
+
+main {
+    max-width: 600px;
+    margin: 3rem auto;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+legend {
+    padding: 0 .6rem;
+}
+
+label {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-top: 0.25rem;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    border-radius: 3px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 3px;
+}
+
+fieldset legend {
+    font-weight: bold;
+}
+
+fieldset label {
+    display: block;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 1.5rem 1rem;
+        margin: 1.3rem;
+    }
+
+    fieldset label {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
