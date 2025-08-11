@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cape Town Attractions</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Final project about places to visit in Cape Town">
+    <meta name="author" content="Anyway Kambeva">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 768px)">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo" aria-label="Cape Explorer home">
+            <img src="images/cape-explorer-logo.svg" alt="Cape Explorer logo">
+        </a>
+    
+        <nav id="nav-menu" class="nav-menu" aria-label="Main navigation">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="attractions.html" class="nav-link">Attractions</a>
+            <a href="tips.html" class="nav-link">Travel Tips</a>
+        </nav>
+    
+        <button id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    </header>
+
+    <main>
+        
+        <section id="home" class="hero">
+            <img src="images/capetown.jpg" alt="Cape Town coast" class="hero-img">
+            <div class="hero-text">
+                <h1>Your Journey Starts Here</h1>
+                <p>Explore Cape Town's breathtaking beauty and unforgettable attractions.</p>
+            </div>
+        </section>
+
+        
+        <section id="destinations" class="featured">
+            <h2>To-Do and Must-See Attractions</h2>
+            <p>Cape Town is a city where every corner holds something worth discovering. From world-famous landmarks like Table
+            Mountain and Robben Island to tranquil beaches, coastal drives, and lush gardens, there's an experience for every mood
+            and every traveler. Whether you're chasing adventure, soaking up history, or simply savoring breathtaking views, these
+            must-see attractions will make your Cape Town journey unforgettable.</p>
+            <div class="card-grid" id="attractions-page-list">
+                <!-- JS will insert attractions here -->
+            </div>
+        </section>
+
+        
+        <section class="cta">
+            <h2>Ready for Your Next Adventure?</h2>
+            <p>Join our community for exclusive tips and hidden gems in Cape Town.</p>
+            <a href="tips.html" class="btn">Sign Up for Tips</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Anyway Kambeva | Cape Town, South Africa.
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

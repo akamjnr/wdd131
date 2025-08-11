@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Places to Visit in Cape Town</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Final project about places to visit in Cape Town">
+    <meta name="author" content="Anyway Kambeva">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 768px)">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+   <header>
+    <a href="index.html" class="logo" aria-label="Cape Explorer home">
+      <img src="images/cape-explorer-logo.svg" alt="Cape Explorer logo">
+    </a>
+
+    <nav id="nav-menu" class="nav-menu" aria-label="Main navigation">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="attractions.html" class="nav-link">Attractions</a>
+      <a href="tips.html" class="nav-link">Travel Tips</a>
+    </nav>
+
+    <button id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+  </header>
+
+
+    <main>
+        
+        <section id="home" class="hero">
+            <img src="images/capetown.jpg" alt="Cape Town coast" class="hero-img">
+            <div class="hero-text">
+                <h1>Places to Visit in Cape Town</h1>
+                <p>Explore Cape Town’s breathtaking beauty and unforgettable attractions.</p>
+                <a href="attractions.html" class="btn">Discover More</a>
+            </div>
+        </section>
+
+        
+        <section class="intro">
+            <h2>Discover Your Next Adventure</h2>
+            <p>
+                Cape Town offers a wide range of attractions from iconic mountains to scenic coastal drives and lush
+                gardens.
+                Whether you're a nature lover, history buff, or foodie, you'll find something magical here. From
+                world-famous
+                landmarks to hidden gems, Cape Town promises unforgettable experiences and breathtaking views for every
+                traveler.
+            </p>
+        </section>
+
+        
+        <section id="destinations" class="featured">
+            <h2>Featured Locations</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="images/table-mountain.jpg" alt="Table Mountain" loading="lazy">
+                    <h3>Table Mountain</h3>
+                    <p>Enjoy panoramic views from one of the world's most famous landmarks. Hike or take the cable car
+                        to the summit and experience breathtaking scenery.</p>
+                </div>
+                <div class="card">
+                    <img src="images/va-waterfront.jpg" alt="V&A Waterfront" loading="lazy">
+                    <h3>V&A Waterfront</h3>
+                    <p>Shop, dine, and enjoy live entertainment by the harbor. Explore local markets, visit museums, and
+                        soak up the vibrant atmosphere.</p>
+                </div>
+                <div class="card">
+                    <img src="images/chapmans-peak.jpg" alt="Chapman's Peak Drive" loading="lazy">
+                    <h3>Chapman's Peak Drive</h3>
+                    <p>Experience a breathtaking scenic drive along the coastline. Capture stunning views of the ocean
+                        and cliffs on this iconic route.</p>
+                </div>
+            </div>
+            <div class="more-btn">
+                <a href="attractions.html" class="btn">See More</a>
+            </div>
+
+        </section>
+
+        
+        <section class="cta">
+            <h2>Ready for Your Next Adventure?</h2>
+            <p>Join our community for exclusive tips and hidden gems in Cape Town.</p>
+            <a href="tips.html" class="btn">Sign Up for Tips</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Anyway Kambeva | Cape Town, South Africa.
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,379 @@
+/* Reset & base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.9rem 1rem;
+    background: #023e8a;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+/* Logo */
+.logo {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo img {
+    height: 34px;
+    width: auto;
+    display: block;
+}
+
+/* Navigation - mobile */
+.nav-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 64px;
+    width: 78%;
+    max-width: 260px;
+    background: #0353a4;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    flex-direction: column;
+    padding: 0.25rem 0;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+/* Nav links */
+.nav-menu a {
+    display: block;
+    padding: 0.9rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-menu a:last-child {
+    border-bottom: none;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    background: rgba(255, 255, 255, 0.06);
+    color: #e6f3ff;
+}
+
+/* Menu toggle */
+#menu-toggle {
+    background: transparent;
+    color: white;
+    border: none;
+    padding: 0.15rem 0.5rem;
+    font-size: 1.6rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+/* Show toggled menu */
+.show {
+    display: flex !important;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: 60vw;
+    max-height: 420px;
+    min-height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+/* overlay - hero */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.304);
+    z-index: 1;
+}
+
+/* hero text */
+.hero-text {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.9rem 1rem;
+    width: calc(100% - 2rem);
+    max-width: 720px;
+    text-align: center;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 2rem;
+    line-height: 1.05;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.hero-text p {
+    font-size: 1rem;
+    margin-bottom: 0.9rem;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: #ff9800;
+    color: white;
+    padding: 0.6rem 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+    background: #023e8a;
+}
+
+/* Intro */
+.intro {
+    padding: 1rem;
+    max-width: 980px;
+    margin: 1.6rem auto;
+    text-align: center;
+}
+
+.intro h2 {
+    margin: .8rem 0;
+    color: #023e8a;
+}
+
+/* Featured */
+.featured {
+    padding: 3rem 1rem;
+    max-width: 1200px;
+    margin: 0.5rem auto;
+}
+
+.featured h2 {
+    color: #023e8a;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.featured p {
+    color: #555;
+    text-align: center;
+    margin: 0 0 1rem;
+    padding: 0 0.5rem;
+}
+
+/* Card grid */
+.card-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+.card {
+    background: #fafafa;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(2, 62, 138, 0.06);
+    border: 1px solid #eee;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card h3 {
+    padding: 0.75rem 0.9rem 0 0.9rem;
+    color: #0077b6;
+    font-size: 1.1rem;
+}
+
+.card p {
+    padding: 0.5rem 0.9rem 1rem 0.9rem;
+    color: #444;
+    font-size: 0.95rem;
+}
+
+.more-btn {
+    display: block;
+    margin: 1.25rem auto 0.6rem;
+    text-align: center;
+}
+
+/* CTA */
+.cta {
+    padding: 4rem 2rem;
+    background: rgba(0, 119, 182, 0.92);
+    color: #fff;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 1.6rem;
+    margin-bottom: .5rem;
+    line-height: 2.2rem;
+}
+
+.cta p {
+    margin-bottom: 0.8rem;
+}
+
+/* Tips page specifics */
+.content h1,
+.subscribe h2 {
+    color: #0077b6;
+}
+
+/* bullets for tips list */
+.tips-list ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.tips-list li {
+    position: relative;
+    padding-left: 1.8rem;
+    margin-bottom: 0.8rem;
+    color: #333;
+    font-size: 1rem;
+}
+
+.tips-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #0077b6;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+
+.content {
+    padding: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tips-list ul {
+    margin: 0.6rem 0 1rem 1.25rem;
+    color: #333;
+}
+
+.subscribe {
+    margin-top: 3rem;
+}
+
+.subscribe form {
+    margin: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.subscribe-ideas {
+    margin-top: 1rem;
+    background: #fff;
+    padding: 5rem;
+    border-radius: 8px;
+    border: 1px solid #eef2f7;
+}
+
+/* Contact form */
+.contact-form {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form label {
+    font-weight: 600;
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    margin-bottom: .8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form button {
+    background: #ff9800;
+    color: white;
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.contact-form button:hover {
+    background: #023e8a;
+}
+
+.thank-you {
+    padding: 1rem;
+    max-width: 800px;
+}
+
+/* Footer */
+footer {
+    padding: 1rem;
+    background: #023e8a;
+    color: #fff;
+    text-align: center;
+}

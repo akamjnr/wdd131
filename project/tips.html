@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cape Town Travel Tips</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Final project about places to visit in Cape Town">
+    <meta name="author" content="Anyway Kambeva">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 768px)">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="logo" aria-label="Cape Explorer home">
+      <img src="images/cape-explorer-logo.svg" alt="Cape Explorer logo">
+    </a>
+
+    <nav id="nav-menu" class="nav-menu" aria-label="Main navigation">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="attractions.html" class="nav-link">Attractions</a>
+      <a href="tips.html" class="nav-link">Travel Tips</a>
+    </nav>
+
+    <button id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+  </header>
+
+  <main class="content">
+    <h1>Travel Tips</h1>
+    <section class="tips-list">
+      <ul>
+        <li>Best time to visit: November to March for sunny weather.</li>
+        <li>Carry sunscreen, a hat and a light jacket — weather can change quickly.</li>
+        <li>Book Table Mountain and Robben Island tickets in advance during high season.</li>
+        <li>Use reputable transport services or public transport where available.</li>
+      </ul>
+    </section>
+
+    <section class="subscribe">
+      <h2>Subscribe for Exclusive Tips</h2>
+      <form id="contact-form" class="contact-form" novalidate>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="message">Message (optional):</label>
+        <textarea id="message" name="message"></textarea>
+    
+        <button type="submit" class="btn">Keep Me Updated</button>
+      </form>
+      <p id="form-message" class="thank-you" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Anyway Kambeva | Cape Town, South Africa.</p>
+    <p id="lastModified" aria-hidden="true"></p>
+  </footer>
+</body>
+
+</html>
